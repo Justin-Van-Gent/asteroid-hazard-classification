@@ -13,7 +13,7 @@ Provide insights relevant to planetary defense
 Demonstrate a full data science workflow from data cleaning to modeling
 
 ## Data Dictionary
-| Column                | Description
+| Column                | Description                                                      |
 |-----------------------|------------------------------------------------------------------|
 | spkid                 | Unique NASA JPL Small-Body ID                                    |
 | full_name             | Full name / designation of the asteroid                          |
@@ -41,7 +41,35 @@ Demonstrate a full data science workflow from data cleaning to modeling
 | last_obs              | Date of last observation                                         |
 | data_arc              | Length of observation arc (days)                                 |
 | data_arc_years        | Length of observation arc (years)                                |
-|-----------------------|------------------------------------------------------------------|
+|                       |                                                                  |
+
+## Data Cleaning Summary
+The original dataset contained 41,281 rows and 29 columns. 
+
+**Columns removed**:
+These columns were removed due to exessive missing values > 90%.
+- 'name'
+- 'albedo'
+- 'rot_per'
+
+**Rows Removed**:
+All the rows that still contained any mssing values after the column drop (539 rows).
+Affected columns with remaining missing values included:
+- 'data_arc'
+- 'data_arc_years'
+- 'moid_au'
+- 'moid_km'
+- 'moid_lunar_distances'
+- 'H'
+- 'condition_code'
+- 'first_orbs'
+
+**Additional quality checks performed**:
+- No duplicate rows found
+- No impossible values detected (e.g. negative numbers, invalid eccentricity, etc.)
+
+**Final clean dataset**:
+- 
 
 ## Motivation
 I have a strong interest in space and planetary defense. With thousands of Near-Earth Asteroids being tracked, understanding which ones pose a real risk — and how we might prepare — feels like an important and timely problem.
