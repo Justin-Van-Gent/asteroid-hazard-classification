@@ -12,6 +12,9 @@ Better understand what makes an asteroid dangerous
 Provide insights relevant to planetary defense
 Demonstrate a full data science workflow from data cleaning to modeling
 
+## Motivation
+I have a strong interest in space and planetary defense. With thousands of Near-Earth Asteroids being tracked, understanding which ones pose a real risk — and how we might prepare — feels like an important and timely problem.
+
 ## Data Dictionary
 | Column                | Description                                                      |
 |-----------------------|------------------------------------------------------------------|
@@ -69,7 +72,6 @@ Affected columns with remaining missing values included:
 - No impossible values detected (e.g. negative numbers, invalid eccentricity, etc.)
 
 **Final clean dataset**:
-- 
-
-## Motivation
-I have a strong interest in space and planetary defense. With thousands of Near-Earth Asteroids being tracked, understanding which ones pose a real risk — and how we might prepare — feels like an important and timely problem.
+- 40,742 rows
+- 26 columns
+- 0 missing values
